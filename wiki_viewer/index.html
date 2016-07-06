@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <script src="index.js"/></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <meta charset="utf-8"/>
+    <title>Wikipedia Viewer</title>
+  </head>
+  <body class="body">
+    <div class="content center-vertical">
+      <div class="random-wiki" onclick="openRandomArticle()">Click for a random article</div>
+    <span class="search-icon" onclick="searchToggle(this, event)">
+      <div class="search-container">
+        <input id="search-input" class="search-input" type="text"  onkeyup="submit(this, event)"/>
+        <i class="fa fa-times" onclick="searchToggle(this, event)"></i>
+    </div>
+    </span>
+  </div>
+    <div id="search-results" class="search-results">
+    </div>
+  </body>
+</html>
