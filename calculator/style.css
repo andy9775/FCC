@@ -1,0 +1,83 @@
+body{
+  background-color: #003040;
+
+}
+.wrapper{
+  min-width: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #006080;
+  width:30%;
+  height:60%;
+  border-radius: 30px;
+  padding: 15px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.title{
+text-align: center;
+flex: 0.9;
+font-size: 1.5em;
+color: white;
+}
+
+
+.display{
+  flex:1.3;
+  background-color: #003040;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  overflow: hidden;
+  padding-right: 10px;
+  padding-left: 10px;
+  color: white;
+}
+.display-content{
+  text-align: right;
+  vertical-align: middle;
+  font-size: 2em;
+}
+
+
+.keyboard{
+  display: flex;
+  flex: 9;
+  flex-direction: row;
+  margin-top: 10px;
+}
+#col1, #col2, #col3, #col4{
+  flex:1;
+  margin: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.button{
+  flex:1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+  margin: 2px;
+  border-radius: 4px;
+  font-size: 2em;
+  font-weight: bold;
+
+  /* http://stackoverflow.com/a/4407335/2605221 */
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;
+}
