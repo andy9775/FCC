@@ -1,0 +1,118 @@
+.body{
+  background-color: #0f558a; /* lightness  = 30 */
+  transition: 1s all;
+}
+.body-dim{
+  background-color: #0a385c;/* lightness = 20 */
+  transition: 1s all;
+}
+
+.board{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #275172; /* lightness = 30 */
+  width: 400px;
+  height: 400px;
+  transition: 1s all;
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+}
+.board-dim{
+  background-color: #1a364c;/* lightness = 20 */
+  transition: 1s all;
+}
+.column-0, .column-2{
+  flex:1;
+  display: flex;
+  flex-direction: column;
+}
+.column-1{
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  border-left: yellow solid 5px;
+  border-right: yellow solid 5px;
+}
+.row{
+  flex:1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5vw;
+  color: white;
+}
+.row:hover{
+  cursor: pointer;
+  background-color: #346d98;
+}
+.row-winner{
+  background-color: orange !important;
+}
+.row-1{
+  border-top: yellow solid 5px;
+  border-bottom: yellow solid 5px;
+}
+.modal{
+  position: fixed;
+  overflow: hidden;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px;
+  background-color: #07253c;
+  width: 60%;
+  height: 20%;
+  font-size: 6vmin;
+  box-shadow: 3px 3px 3px 0px black;
+  border-radius: 10px;
+  transition: 0.5s all;
+}
+.modal-shrink{
+  width: 0%;
+  height: 0%;
+  font-size: 0;
+  top:-50%;
+  transition: 0.5s all;
+}
+.modal-gone{
+  visibility: hidden;
+}
+.text-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #c8e4f9;
+}
+.text{
+  flex:1;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+}
+.button-wrapper{
+  flex:1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+.button{
+    margin-right: 30px;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-color: #1779c4;
+    border-width: 2px;
+    border-style: solid;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button:hover{
+  background-color: #115a92;
+  cursor: pointer;
+}
