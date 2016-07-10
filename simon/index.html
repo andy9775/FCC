@@ -1,0 +1,82 @@
+<html>
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Holtwood+One+SC' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <meta charset="utf-8">
+    <title>Simon game</title>
+  </head>
+  <body>
+    <div class="game-wrapper">
+      <div class="row">
+
+      <div class="green-quarter quarter" id="q0" onmousedown="handleClick(0)" onmouseup="handleClick(0)">
+      </div>
+      <div class="red-quarter quarter" id="q1" onmousedown="handleClick(1)" onmouseup="handleClick(1)">
+      </div>
+    </div>
+    <div class="row">
+
+
+      <div class="yellow-quarter quarter" id="q2" onmousedown="handleClick(2)" onmouseup="handleClick(2)">
+      </div>
+      <div class="blue-quarter quarter" id="q3" onmousedown="handleClick(3)" onmouseup="handleClick(3)">
+      </div>
+    </div>
+    </div>
+    <div class="game-pad">
+      <div class="title-wrapper">
+        Simon	<div class="copyright">
+            &reg;
+        </div>
+      </div>
+      <div class="button-wrapper">
+        <div class="counter-wrapper">
+          <div class="counter-display counter-display-off">
+            - -
+          </div>
+            <div class="counter-title">
+              COUNT
+            </div>
+        </div>
+
+
+        <div class="start-button-wrapper">
+          <div class="start-button" onclick="pressStart()">
+
+          </div>
+          <div class="start-button-title">
+            START
+          </div>
+        </div>
+          <div class="strict-switch-wrapper">
+            <div class="strict-indicator">
+            </div>
+            <div class="strict-button" onclick="handleStrict()">
+            </div>
+            <div class="strict-title">
+              STRICT
+            </div>
+          </div>
+
+
+      </div>
+      <div class="switch-wrapper">
+          <div class="switch-title">
+            OFF
+          </div>
+          <div class="switch-container" onclick="toggleOnSwitch(this, event)">
+            <div class="switch switch-on">
+            </div>
+            <div class="switch" id="on-switch">
+            </div>
+          </div>
+          <div class="switch-title">
+            ON
+          </div>
+      </div>
+    </div>
+  </body>
+</html>

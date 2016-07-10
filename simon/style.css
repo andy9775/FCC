@@ -1,0 +1,243 @@
+body{
+  background-color: #90C3D4;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;
+}
+.game-wrapper{
+  position: fixed;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+  width: 520px;
+  height: 500px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  background-color: #474747;
+  border-radius: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.row{
+  flex:1;
+  width: 500px;
+  height: 250px;
+  display: flex;
+
+}
+.quarter{
+  flex:1;
+}
+.green-quarter{
+  background-color: #008000;
+  border: #474747 solid 10px;
+  border-top-left-radius: 100%;
+
+}
+.green-quarter-press{
+  background-color: #0c0;
+}
+.green-quarter-on:active{
+  background-color: #0c0;
+}
+.red-quarter{
+  background-color: #D60000;
+  border: #474747 solid 10px;
+  border-top-right-radius: 100%;
+}
+.red-quarter-press {
+    background-color: #ff2929;
+}
+.red-quarter-on:active{
+  background-color: #ff2929;
+}
+.yellow-quarter{
+  background-color: #D6D300;
+  border: #474747 solid 10px;
+  border-bottom-left-radius: 100%;
+}
+.yellow-quarter-press {
+  background-color: #fffb24;
+}
+.yellow-quarter-on:active{
+  background-color: #fffb24;
+}
+.blue-quarter{
+  background-color: #0000FF;
+  border: #474747 solid 10px;
+  border-bottom-right-radius: 100%;
+}
+.blue-quarter-press {
+  background-color: #4d4dff;
+}
+.blue-quarter-on:active{
+  background-color: #4d4dff;
+}
+
+
+.game-pad{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 275px;
+  height: 275px;
+  background-color: #dedede;
+  border: #474747 solid 12px;
+  border-radius: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.title-wrapper{
+  flex:0.6;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  font-size: 3em;
+  font-family: 'Holtwood One SC', serif;
+  pointer-events: none;
+}
+.copyright{
+  font-size: 0.5em !important;
+  font-family: 'Holtwood One SC', serif;
+}
+
+
+.button-wrapper{
+  flex:1;
+  display: flex;
+  flex-direction: row;
+
+}
+.counter-wrapper{
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+.counter-display{
+  flex:1;
+  width: 60px;
+  max-height: 40px;
+  background-color: #420000;
+  border: black solid 3px;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px 0 gray;
+  font-size: 1.5em;
+  text-align: center;
+  padding-top: 4px;
+  font-weight: bold;
+  color: red;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+.counter-display-off{
+  color: #5c0000;
+}
+.counter-title{
+  flex:1;
+}
+.start-button-wrapper{
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 27px;
+
+}
+.start-button{
+  flex:1;
+  width: 25px;
+  max-height: 25px;
+  background-color: #900;
+  border-radius: 100%;
+  border: black solid 4px;
+  box-shadow: 0px 2px 2px 0 gray;
+  margin-bottom: 3px;
+}
+.start-button:active{
+  box-shadow: 0px 0px 0 0 gray;
+}
+.start-button-title{
+  flex:1;
+}
+
+.strict-switch-wrapper{
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 13px;
+}
+
+.strict-indicator{
+  flex:1;
+  width: 6px;
+  max-height: 6px;
+  background-color: black;
+  border: black solid 2px;
+  border-radius: 100%;
+  margin-bottom: 5px;
+}
+.strict-indicator-on{
+  background-color: #c70000;
+}
+.strict-button{
+  flex:1;
+  width: 25px;
+  max-height: 25px;
+  background-color: #ff0;
+  border-radius: 100%;
+  border: black solid 4px;
+  box-shadow: 0px 2px 2px 0 gray;
+  margin-bottom: 3px;
+}
+.strict-button:active{
+    box-shadow: 0px 0px 0 0 gray;
+}
+.strict-title{
+  flex:1;
+}
+
+
+.switch-wrapper{
+  flex:1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.switch-container{
+  width: 40px;
+  height: 20px;
+  background-color: black;
+  border-radius: 5px;
+  border: black solid 2px;
+  overflow: hidden;
+  margin-left: 5px;
+  margin-right: 5px;
+  display: flex;
+  flex-direction: row;
+}
+.switch{
+  width: 20px;
+  height: 20px;
+  pointer-events: all !important;
+}
+.switch-on{
+background-color: #00BFFF;
+}
+.switch-title{
+
+}
