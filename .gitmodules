@@ -1,0 +1,6 @@
+[submodule "FCC-timestamp-server"]
+	path = FCC-timestamp-server
+	url = https://github.com/andy9775/FCC-timestamp-server.git
+[submodule "FCC-header-parse-server"]
+	path = FCC-header-parse-server
+	url = https://github.com/andy9775/FCC-header-parse-server.git
